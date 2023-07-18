@@ -1,0 +1,375 @@
+/* CSS Document */
+.trangphuc{
+    padding-top: 120px;
+    box-sizing: border-box;
+}
+.khung-sanpham-box{
+    width: 40%;
+}
+.taikhoan{
+    width: 60%;
+}
+.radio_garena{
+    display: flex;
+    align-items: center;
+}
+h2{
+    font-family: lienquan;
+    font-size: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.radio_garena img{
+    width: 50px;
+    height: 50px;
+    border-radius: 3px;
+    transition: all linear 0.2s;
+}
+.garena, .facebook{
+    position: relative;
+    margin-left: 30px;
+    height: 50px;
+    width: 50px;
+}
+.garena img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.radio_garena input{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+    letter-spacing: 1px;
+}
+.radio_garena .garena:hover img, .radio_garena .facebook:hover img{
+    filter: brightness(1.5);
+    cursor: pointer;
+    transition: all linear 0.2s;
+}
+.radio_garena input:checked ~ img{
+    box-shadow: 0px 1px 20px -6px #ccc;
+}
+.box_taikhoan{
+    position: relative;
+    width: 100%;
+    padding-top: 20px;
+    height: 30px;
+}
+
+.box_taikhoan input{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40%;
+    height: 30px;
+    padding-left: 10px;
+    letter-spacing: 1px;
+}
+.thecao{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 60px;
+}
+.viettel, .mobiphone, .vinaphone, .zing, .gate, .vcoin{
+    position: relative;
+    cursor: pointer;
+    width: 100px;
+    margin-right: 3px;
+}
+.viettel input, .mobiphone input, .vinaphone input, .zing input, .gate input, .vcoin input{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 50px;
+    width: 100%;
+    z-index: 2;
+    cursor: pointer;
+    opacity: 0;
+}
+.thecao img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 40px;
+   
+}
+.thecao input:checked ~ img{
+    border:1px solid rgba(166,140,0,1.00);
+    border-radius: 2px;
+}
+.giathe{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.seri-mathe{
+    text-align: left;
+    width: 100%;
+}
+.seri-mathe input{
+    height: 30px;
+    width: 40%;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border-radius: 5px;
+    outline: none;
+    border:none;
+    letter-spacing: 1px;
+}
+.giasanpham{
+    background-image: url("../images/btn.png");
+    width: 200px;
+    height: 50px;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-family: lienquan;
+    cursor: pointer;
+    transition: all linear 0.1s;
+}
+.giasanpham:hover{
+    background-image: url("../images/btn-active.png");
+    transition: all linear 0.1s;
+}
+.giasanpham img{
+    margin-left: 5px;
+    width: 35px;
+    height: 35px;
+}
+.giathe h2{
+    margin-left: 10px;
+    letter-spacing: 1px;
+}
+.btn-thanhtoan{
+    width: 136px;
+    height: 43px;
+    background-image: url("../images/bg_btn1.png");
+    background-size: contain;
+    transition: all linear 0.2s;
+    cursor: pointer;
+}
+.btn-thanhtoan button{
+    border:none;
+    background: none;
+    width: 136px;
+    height: 43px;
+    font-size: 1.2em;
+    font-family: lienquan;
+    text-transform: uppercase;
+    color: #E6AB00;
+    letter-spacing: 1px;
+     cursor: pointer;
+}
+.btn-thanhtoan:hover{
+    transform: scale(1.2);
+    transition: all linear 0.2s;
+}
+.trangphuc h3{
+    padding: 0;
+    margin: 0;
+    line-height: 30px;
+    letter-spacing: 1px;
+    font-size: 1em;
+    font-family: lienquan;
+    color: #fff;
+}
+.maudo{
+    background: -webkit-linear-gradient(#7683d9, #d8a0fe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+header{
+    background-color: #000;
+}
+.gioithieu{
+    background-color: rgba(0,0,0,0.98);
+    background-image: url("../images/line.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 100%;
+    height: 30px;
+    padding: 5px 0;
+    color: #fff;
+    font-family: lienquan;
+    line-height: 0px;
+    letter-spacing: 1px;
+    overflow: hidden;
+}
+.text-dep2{
+    text-transform: uppercase;
+}
+.marquee{
+    width: 100%;
+    
+}
+.marquee-content{
+    list-style: none;
+    display: flex;
+    height: 30px;
+    padding: 0;
+    /*animation: scrolling 20s linear infinite;*/
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    justify-content: center;
+}
+/*@keyframes scrolling{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%)
+    }
+}*/
+/*.marquee-content:hover{
+    animation-play-state: paused;
+}*/
+.marquee-content li{
+    text-align: center;
+    /*min-width: 100% !important;*/
+    letter-spacing: 2px;
+}
+.text-dep3{
+    display:inline-block;
+	background: url("../images/bg4_zps012f7fcf.gif") repeat scroll 0 0%;
+	color: #ff0000;
+	font-weight: bold;
+	text-shadow: 0 0 2px #ff0000, 0 0 1px #ffff00, 0 0 1px #ffff00, 1px 1px 0 #990000;
+}
+@media screen and (min-width:46.25em) and (max-width:63.9375em){
+    .viettel, .mobiphone, .vinaphone, .zing, .gate, .vcoin{
+        width: 70px;
+    }
+    .thecao{
+        height: 50px;
+    }
+    .thecao img{
+        height: 35px;
+    }
+}
+
+@media screen and (max-width:46.1875em){
+    .khung-sanpham-box{
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .hinh-sanpham{
+        height: 310px;
+    }
+    .taikhoan{
+        width: 100%;
+        overflow: hidden;
+    }
+    .taikhoan h2{
+        font-size: 1em;
+    }
+    .garena, .facebook{
+        margin-left: 20px;
+        width: 40px;
+        height: 40px;
+    }
+    .radio_garena{
+        padding-left: 15px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+    }
+    .radio_garena img{
+        width: 100%;
+        height: 100%;
+    }
+    .box_taikhoan{
+        padding: 0;
+        height: 40px;
+        justify-content: center;
+    }
+    .box_taikhoan input{
+        width: 90%;
+        margin: auto;
+        box-sizing: border-box;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 15px;
+        
+    }
+    .thecao{
+        margin-top: 10px;
+        height: 40px;
+        padding-left: 0px;
+        padding-right: 19px;
+        box-sizing: border-box;
+        justify-content: center;
+    }
+    .viettel, .mobiphone, .vinaphone, .zing, .gate, .vcoin{
+        width: 70px;
+        height: 30px;
+        margin-right: 1px
+    }
+    .viettel input, .mobiphone input, .vinaphone input, .zing input, .gate input, .vcoin input{
+        height: 30px;
+        
+    }
+    .thecao img{
+        height: 30px;
+    }
+    .seri-mathe{
+        text-align: center;
+    }
+    .seri-mathe input{
+        width: 90%;
+        border-radius: 0px;
+    }
+    .giasanpham{
+        width: 140px;
+        height: 35px;
+        background-repeat: no-repeat;
+        font-size: 1.3em;
+    }
+    .giathe{
+        justify-content: center;
+    }
+    .btn-thanhtoan{
+        margin: 10px auto;
+    }
+    .khung-sanpham-box{
+        height: 360px;
+    }
+    .trangphuc{
+        padding-bottom: 12px;
+    }
+    .trangphuc h3{
+        font-size: 0.8em;
+    }
+    .marquee-content li{
+        font-size: 0.7em;
+        min-width: 180% !important;
+    }
+    footer{
+        padding-top: 0px;
+    }
+    .gioithieu{
+        margin-top: 0px;
+        padding: 0
+    }
+    .btn-thanhtoan button{
+        font-size: 0.8em;
+    }
+    .giasanpham img{
+        width: 25px;
+        height: 25px;
+    }
+}

@@ -1,0 +1,7 @@
+RewriteEngine ON
+RewriteRule "trangchu" "index.php"
+RewriteRule "sukien" "index.html"
+RewriteRule "dangxuat" "index2.php?p=20"
+
+RewriteRule "^thanhtoan/(.*)$" "thanhtoan.php?id=$1"
+
